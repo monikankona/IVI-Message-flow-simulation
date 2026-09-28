@@ -1,0 +1,32 @@
+18:58:39.819 I/IVI_HMI: -> MediaService | USER_INPUT | command=PLAY track=Connected Drive
+18:58:39.819 I/MediaService: -> MediaService | COMMAND_RECEIVED | command=PLAY track=Connected Drive
+18:58:39.819 I/AudioService: -> AudioFlinger | AUDIO_FOCUS_GRANTED | owner=MediaService
+18:58:39.819 I/AudioService: -> AudioFlinger | START_OUTPUT
+18:58:39.819 I/AudioFlinger: -> AudioHAL | OPEN_OUTPUT
+18:58:39.819 I/AudioHAL: -> DSP/Amplifier | HAL_OPEN | sample_rate=48000 channels=2
+18:58:39.819 I/AudioFlinger: -> AudioHAL | WRITE_MIXED_AUDIO | frames=1024
+18:58:39.819 I/AudioHAL: -> DSP/Amplifier | HAL_WRITE | frames=1024
+18:58:39.819 I/MediaService: -> IVI_HMI | STATE_UPDATE | state=PLAYING track=Connected Drive
+18:58:39.819 I/TelephonyService: -> AudioService | AUDIO_FOCUS_LOSS | reason=incoming_call
+18:58:39.819 I/IVI_HMI: -> MediaService | USER_INPUT | command=PAUSE
+18:58:39.819 I/MediaService: -> MediaService | COMMAND_RECEIVED | command=PAUSE
+18:58:39.819 I/AudioService: -> AudioFlinger | PAUSE_OUTPUT
+18:58:39.819 I/AudioFlinger: -> AudioHAL | PAUSE_OUTPUT
+18:58:39.819 I/AudioHAL: -> DSP/Amplifier | HAL_FLUSH
+18:58:39.819 I/MediaService: -> IVI_HMI | STATE_UPDATE | state=PAUSED
+18:58:39.819 I/TelephonyService: -> AudioService | CALL_ENDED
+18:58:39.819 I/IVI_HMI: -> MediaService | USER_INPUT | command=RESUME
+18:58:39.819 I/MediaService: -> MediaService | COMMAND_RECEIVED | command=RESUME
+18:58:39.819 I/AudioService: -> AudioFlinger | AUDIO_FOCUS_GRANTED | owner=MediaService
+18:58:39.819 I/AudioService: -> AudioFlinger | RESUME_OUTPUT
+18:58:39.819 I/AudioFlinger: -> AudioHAL | RESUME_OUTPUT
+18:58:39.819 I/AudioFlinger: -> AudioHAL | WRITE_MIXED_AUDIO | frames=1024
+18:58:39.819 I/AudioHAL: -> DSP/Amplifier | HAL_WRITE | frames=1024
+18:58:39.819 I/MediaService: -> IVI_HMI | STATE_UPDATE | state=PLAYING
+18:58:39.819 I/IVI_HMI: -> MediaService | USER_INPUT | command=STOP
+18:58:39.819 I/MediaService: -> MediaService | COMMAND_RECEIVED | command=STOP
+18:58:39.819 I/AudioService: -> AudioFlinger | PAUSE_OUTPUT
+18:58:39.819 I/AudioFlinger: -> AudioHAL | PAUSE_OUTPUT
+18:58:39.819 I/AudioHAL: -> DSP/Amplifier | HAL_FLUSH
+18:58:39.819 I/AudioService: -> AudioFlinger | AUDIO_FOCUS_RELEASED | owner=MediaService
+18:58:39.819 I/MediaService: -> IVI_HMI | STATE_UPDATE | state=IDLE

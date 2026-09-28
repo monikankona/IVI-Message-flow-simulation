@@ -1,0 +1,33 @@
+seq,timestamp,source,destination,event,payload
+1,18:58:39.819,IVI_HMI,MediaService,USER_INPUT,"{""command"": ""PLAY"", ""track"": ""Connected Drive""}"
+2,18:58:39.819,MediaService,MediaService,COMMAND_RECEIVED,"{""command"": ""PLAY"", ""track"": ""Connected Drive""}"
+3,18:58:39.819,AudioService,AudioFlinger,AUDIO_FOCUS_GRANTED,"{""owner"": ""MediaService""}"
+4,18:58:39.819,AudioService,AudioFlinger,START_OUTPUT,{}
+5,18:58:39.819,AudioFlinger,AudioHAL,OPEN_OUTPUT,{}
+6,18:58:39.819,AudioHAL,DSP/Amplifier,HAL_OPEN,"{""channels"": 2, ""sample_rate"": 48000}"
+7,18:58:39.819,AudioFlinger,AudioHAL,WRITE_MIXED_AUDIO,"{""frames"": 1024}"
+8,18:58:39.819,AudioHAL,DSP/Amplifier,HAL_WRITE,"{""frames"": 1024}"
+9,18:58:39.819,MediaService,IVI_HMI,STATE_UPDATE,"{""state"": ""PLAYING"", ""track"": ""Connected Drive""}"
+10,18:58:39.819,TelephonyService,AudioService,AUDIO_FOCUS_LOSS,"{""reason"": ""incoming_call""}"
+11,18:58:39.819,IVI_HMI,MediaService,USER_INPUT,"{""command"": ""PAUSE""}"
+12,18:58:39.819,MediaService,MediaService,COMMAND_RECEIVED,"{""command"": ""PAUSE""}"
+13,18:58:39.819,AudioService,AudioFlinger,PAUSE_OUTPUT,{}
+14,18:58:39.819,AudioFlinger,AudioHAL,PAUSE_OUTPUT,{}
+15,18:58:39.819,AudioHAL,DSP/Amplifier,HAL_FLUSH,{}
+16,18:58:39.819,MediaService,IVI_HMI,STATE_UPDATE,"{""state"": ""PAUSED""}"
+17,18:58:39.819,TelephonyService,AudioService,CALL_ENDED,{}
+18,18:58:39.819,IVI_HMI,MediaService,USER_INPUT,"{""command"": ""RESUME""}"
+19,18:58:39.819,MediaService,MediaService,COMMAND_RECEIVED,"{""command"": ""RESUME""}"
+20,18:58:39.819,AudioService,AudioFlinger,AUDIO_FOCUS_GRANTED,"{""owner"": ""MediaService""}"
+21,18:58:39.819,AudioService,AudioFlinger,RESUME_OUTPUT,{}
+22,18:58:39.819,AudioFlinger,AudioHAL,RESUME_OUTPUT,{}
+23,18:58:39.819,AudioFlinger,AudioHAL,WRITE_MIXED_AUDIO,"{""frames"": 1024}"
+24,18:58:39.819,AudioHAL,DSP/Amplifier,HAL_WRITE,"{""frames"": 1024}"
+25,18:58:39.819,MediaService,IVI_HMI,STATE_UPDATE,"{""state"": ""PLAYING""}"
+26,18:58:39.819,IVI_HMI,MediaService,USER_INPUT,"{""command"": ""STOP""}"
+27,18:58:39.819,MediaService,MediaService,COMMAND_RECEIVED,"{""command"": ""STOP""}"
+28,18:58:39.819,AudioService,AudioFlinger,PAUSE_OUTPUT,{}
+29,18:58:39.819,AudioFlinger,AudioHAL,PAUSE_OUTPUT,{}
+30,18:58:39.819,AudioHAL,DSP/Amplifier,HAL_FLUSH,{}
+31,18:58:39.819,AudioService,AudioFlinger,AUDIO_FOCUS_RELEASED,"{""owner"": ""MediaService""}"
+32,18:58:39.819,MediaService,IVI_HMI,STATE_UPDATE,"{""state"": ""IDLE""}"
